@@ -1,12 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { ReportData, UserLists } from '../report-data.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiServicesService {
+
 
   baseUrl: string = "http://localhost/OES-Angular-app/Angular-CRUD/apiConnection";
   reportData!: ReportData[];
@@ -34,8 +35,12 @@ export class ApiServicesService {
 
   }
 
-  // updateReport(id: number, data:any):Observable <any>{
-  //   return this.httpClient.put(this.baseUrl )
-  // }
+  getDetailsById(id:any) {
+    return this.httpClient.get<ReportData[]>(this.baseUrl + '/viewReport.php?id=' + id).pipe(map(data=>data));
+  }
+
+  update(id: number, data:any):Observable <ReportData[]>{
+    return this.httpClient.put<ReportData[]>(this.baseUrl + '/update.php', {id, data})
+  }
 
 }

@@ -6,6 +6,7 @@ import { AdminviewComponent } from './components/admin/adminview/adminview.compo
 import { UserListsComponent } from './components/admin/user-lists/user-lists.component';
 import { FillUpFormComponent } from './components/fill-up-form/fill-up-form.component';
 import { HomeComponent } from './components/home/home.component';
+import { EditentryComponent } from './components/admin/editentry/editentry.component';
 
 const routes: Routes = [
   
@@ -15,7 +16,8 @@ const routes: Routes = [
     children:[
       {path: 'admin', component:AdminComponent},
       {path:'admin/allrecords', component:AdminviewComponent},
-      {path:'admin/allusers', component:UserListsComponent}
+      {path:'admin/allusers', component:UserListsComponent},
+      // {path:'admin/editentry/:id', component:EditentryComponent}
     ]
   },
   {path: '', redirectTo:'/home', pathMatch:'full'}

@@ -7,10 +7,10 @@
     <div class="row">
         <mat-label >Inclusive Date</mat-label>
         <mat-form-field appearance="outline">
-            <input matInput type="date"    name="date_entry" formControlName="date_entry" placeholder="Enter a date">
+            <input matInput type="date" name="date_entry" formControlName="date_entry" placeholder="Enter a date">
             <mat-hint>MM/DD/YYYY</mat-hint>
-            <!-- <mat-datepicker-toggle matIconSuffix [for]="picker" class="dateIcon"></mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker> -->
+            <mat-datepicker-toggle matIconSuffix [for]="picker" class="dateIcon"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
             <!-- <script>
                 $('#picker').picker({format: 'yyyy-MM-dd'});
             </script> -->
@@ -92,10 +92,10 @@
         <mat-label><b>Type of Extension Services Rendered</b></mat-label>
         <mat-form-field appearance="outline">
             <mat-select multiple="true" name="serviceOpt" formControlName="serviceOpt">
-                <mat-option value="training">Training</mat-option>
-                <mat-option value="outreach">Outreach</mat-option>
-                <mat-option value="consultancy">Consultancy</mat-option>
-                <mat-option value="gad">GAD</mat-option>
+                <mat-option value="Training">Training</mat-option>
+                <mat-option value="Outreach">Outreach</mat-option>
+                <mat-option value="Consultancy">Consultancy</mat-option>
+                <mat-option value="GAD">GAD</mat-option>
             </mat-select>
         </mat-form-field>
     </div>

@@ -96,6 +96,7 @@ export class FillUpFormComponent implements OnInit {
         console.log(this.reportData);
         // console.log(response);
         alert("Added Successfully!");
+        this.fillForm.reset();
       });
 
 

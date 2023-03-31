@@ -31,6 +31,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { AdminviewComponent } from './components/admin/adminview/adminview.component';
 import { UserListsComponent } from './components/admin/user-lists/user-lists.component';
+import { EditentryComponent } from './components/admin/editentry/editentry.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { UserListsComponent } from './components/admin/user-lists/user-lists.com
     HomeComponent,
     AdminComponent,
     AdminviewComponent,
-    UserListsComponent
+    UserListsComponent,
+    EditentryComponent
   ],
   imports: [
     BrowserModule,

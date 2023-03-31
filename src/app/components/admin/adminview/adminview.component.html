@@ -37,6 +37,7 @@
                     <th>Faculty/Staff</th>
                     <th>Role</th>
                     <th>Cost Fund</th>
+                    <th>Actions</th>
                 </tr>
         
                 <tr *ngFor="let data of _api.reportData">
@@ -59,17 +60,40 @@
                     <td>{{data.fac_staff}}</td>
                     <td>{{data.role}}</td>
                     <td>{{data.cost_fund}}</td>
-                </tr>
+                    <td>
 
-                <mat-paginator [length]="100"
+                        <span class="material-symbols-outlined" (click)="openCreateFillForm()">
+                            <mat-icon style="color: rgb(0, 62, 87);">
+                                edit_square
+                            </mat-icon>
+                        </span>
+                        <!-- <a routerLink="../editentry/{{data.entry_id}}" routerLinkActive="active">
+                            <span class="material-symbols-outlined">
+                                <mat-icon style="color: rgb(0, 62, 87);">
+                                    edit_square
+                                </mat-icon>
+                            </span>
+                        </a> -->
+                        
+                        <span class="material-symbols-outlined">
+                            <mat-icon style="color: darkred;" (onclick)="delete()">
+                                delete
+                            </mat-icon>
+                        </span>
+                        
+                    </td>
+                </tr>
+        
+            </table>
+
+            
+     
+        </mat-card>
+        <mat-paginator [length]="100"
                 [pageSize]="10"
                 [pageSizeOptions]="[5, 10, 25, 100]"
                 aria-label="Select page">
-                </mat-paginator>
-        
-            </table>
-     
-        </mat-card>
+            </mat-paginator>
     </mat-card>
 
 </div>

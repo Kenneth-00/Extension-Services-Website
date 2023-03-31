@@ -36,7 +36,7 @@
     //print_r($hobbies);
     $service_selected = '';
     foreach ($services as $service_rendered) {
-        $service_selected .= $service_rendered.',';
+        $service_selected .= $service_rendered.', ';
      } 
 
     // if (!isset($data->first_name) || !isset($data->last_name) || !isset($data->email)) :
