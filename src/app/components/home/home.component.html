@@ -1,0 +1,58 @@
+<div class="main">
+    <div class="row">
+        <mat-toolbar class="toolbar">
+            
+            <span><a href="https://www.gov.ph"><strong>GOVPH</strong></a></span>
+            <!-- <span class="example-spacer"></span> -->
+        
+            <button mat-button class="row2button">
+                <span>
+                    HOME
+                </span>
+            </button>
+            <button mat-button class="row2button" (click)="openCreateFillForm()">
+                <span>
+                    CREATE
+                </span>
+            </button>
+            <button mat-button class="row2button" (click)="viewReports()">
+                <span>
+                    VIEW
+                </span>
+            </button>
+            <button mat-button class="controller">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </mat-toolbar>
+        <div class="masthead-banner">
+            <div class="masthead-inner-wrapper">
+                <img src=".\assets\images\extension_logo.png" alt="Extension Logo" srcset="">
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="auxiliary">
+        <div class="row">
+            <div class="small-12 columns toplayer">
+                <nav id="aux-main" class="nomargin show-for-medium-up">
+                    <ul class="dropdown menu" data-dropdown-menu="replwu-dropdown-menu" role="menubar">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139" role="none"><a href="" role="menuitem">News</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140" role="none"><a href="" role="menuitem">Announcements</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-142" role="none"><a href="http://localhost:8080/oes.evsu.edu.ph/journals/" role="menuitem">Journals</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141" role="none"><a href="http://localhost:8080/oes.evsu.edu.ph/downloads/" role="menuitem">Downloads</a></li>
+                    </ul>
+                </nav>
+            </div> 
+    
+        </div>
+    </div> -->
+
+    
+</div>
+
+<div class="row">
+    <router-outlet></router-outlet>
+</div>
+
+    

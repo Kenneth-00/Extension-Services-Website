@@ -1,0 +1,95 @@
+.title {
+    text-align: center;
+}
+
+.content {
+    padding-top: 10px; 
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+
+// .duration {
+
+//     mat-form-field {
+//         width: 150px;
+//     }
+
+//     mat-radio-group {
+//         display: block;
+//     }
+// }
+
+.gender_label_count {
+    display: flex;
+    // justify-items: start;
+
+    mat-form-field {
+        padding-left: 10px;
+        width: 150px;
+    }
+}
+
+.mean_rate {
+
+    mat-form-field {
+        width: 100px;
+        padding-right: 13px;
+    }
+}
+
+.group {
+    display: flex;
+    align-items: baseline;
+}
+
+.group2, .group3 {
+    display: flex;
+    align-items: baseline;
+}
+
+.service {
+    
+    mat-form-field {
+        display: block;
+        padding-left: 10px;
+        padding-top: 3px;
+        width: auto;
+    }
+}
+
+.group3{
+
+    mat-label {
+        padding-right: 5px;
+    }
+
+}
+
+.cost {
+    
+    mat-form-field {
+        width: 100px;
+    }
+}
+
+.role{
+
+    mat-form-field {
+        width: 145px;
+        padding-right: 5px;
+    }
+}
+
+.dialogbtn {
+    flex-direction: row-reverse;
+}
+
+.dateIcon {
+    display: grid;
+    justify-items: end;
+}

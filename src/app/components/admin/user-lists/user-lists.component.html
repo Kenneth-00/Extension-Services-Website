@@ -1,0 +1,38 @@
+<div class="row">
+
+    <mat-card class="card" id="cardcontainer">
+
+        <div class="title">
+            <p><strong>USER LISTS</strong></p>
+        </div>
+
+        
+
+        <mat-card class="card">
+            <table class="tablecontainer">
+                <tr>
+                    <th>NO.</th>
+                    <th>NAME</th>
+                    <th>USERNAME</th>
+                    <th>PASSWORD</th>
+                    <th>ROLE</th>
+                </tr>
+        
+                <tr *ngFor="let users of _api.userLists">
+                    <td>{{users.user_id}}</td>
+                    <td>{{users.name}}</td>
+                    <td>{{users.username}}</td>
+                    <td>{{users.user_password}}</td>
+                    <td>{{users.user_role}}</td>
+                </tr>
+        
+            </table>
+        
+        
+        
+        </mat-card>
+
+    </mat-card>
+
+
+</div>

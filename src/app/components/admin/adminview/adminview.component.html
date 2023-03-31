@@ -1,0 +1,75 @@
+<div class="row">
+
+    <mat-card class="card" id="cardcontainer">
+
+        <div class="title">
+            <strong>QUARTERLY ACCOMPLISHMENT REPORT</strong><br>
+            <strong>For the month of __________ to __________ , _____</strong>
+        </div>
+        <div class="text">
+            <div class="left">
+                <p>College/Campus: __________________</p>
+            </div>
+            <div class="right">
+                <p>Extension Program: ________________________</p>
+            </div>
+        </div>
+        
+        <mat-card class="card">
+            <table class="tablecontainer">
+                <tr>
+                    <th>Entry Id</th>
+                    <th>Inclusive Date</th>
+                    <th>Facilitators</th>
+                    <th>Title</th>
+                    <th>Type of Beneficiary</th>
+                    <th>Male Count</th>
+                    <th>Female Count</th>
+                    <th>Total</th>
+                    <th>Mean1</th>
+                    <th>Mean2</th>
+                    <th>Mean3</th>
+                    <th>Mean4</th>
+                    <th>Mean5</th>
+                    <th>Duration</th>
+                    <th>Service Rendered</th>
+                    <th>Partner</th>
+                    <th>Faculty/Staff</th>
+                    <th>Role</th>
+                    <th>Cost Fund</th>
+                </tr>
+        
+                <tr *ngFor="let data of _api.reportData">
+                    <td>{{data.entry_id}}</td>
+                    <td>{{data.date_entry}}</td>
+                    <td>{{data.facilitator}}</td>
+                    <td>{{data.title}}</td>
+                    <td>{{data.type_beneficiary}}</td>
+                    <td>{{data.count_male}}</td>
+                    <td>{{data.count_female}}</td>
+                    <td>{{data.count_male}} + {{data.count_female}}</td>
+                    <td>{{data.poor_rate}}</td>
+                    <td>{{data.fair_rate}}</td>
+                    <td>{{data.satisfactory_rate}}</td>
+                    <td>{{data.verysatisfactory_rate}}</td>
+                    <td>{{data.excellent_rate}}</td>
+                    <td>{{data.duration}}</td>
+                    <td>{{data.serviceOpt}}</td>
+                    <td>{{data.partners}}</td>
+                    <td>{{data.fac_staff}}</td>
+                    <td>{{data.role}}</td>
+                    <td>{{data.cost_fund}}</td>
+                </tr>
+
+                <mat-paginator [length]="100"
+                [pageSize]="10"
+                [pageSizeOptions]="[5, 10, 25, 100]"
+                aria-label="Select page">
+                </mat-paginator>
+        
+            </table>
+     
+        </mat-card>
+    </mat-card>
+
+</div>

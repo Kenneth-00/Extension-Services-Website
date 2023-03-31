@@ -1,0 +1,76 @@
+.main {
+    background-color: #900303 !important;
+    // position: fixed;
+    z-index: 4;
+    width: 100%;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+.row {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.toolbar {
+    background-color: #6e0000 !important;
+    box-shadow: 0px 1px 4px rgba(255,255,255,.5);
+    width: 100%;
+    
+}
+
+.toolbar span a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.toolbar .row .row2button {
+    border-right: 1px solid transparent;
+}
+
+.mat-mdc-button:not(:disabled) {
+    background: none;
+    color: #fff;
+
+}
+
+.row2button, .controller {
+    // height: 20px;
+    width: fit-content;
+    margin-left: 6px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+// #btnCreate {
+//     background-color: rgb(9, 202, 9);
+// }
+
+.row2button {
+    background-color: transparent;
+    color: #fff;
+    box-shadow: none;
+    
+
+    span {
+        display: inline;
+    }
+}
+.masthead-banner{
+    background-color: #900303 !important;
+    max-height: 140px;
+}
+
+.masthead-inner-wrapper img{
+    width: 128px;
+}
+
+.auxiliary {
+    background-color: #f7f7f7;
+    border-right: 1px solid #f7f7f7;
+}
+.banner-pads {
+    padding: 15px 0 !important;
+    margin: 0;
+    border-bottom: 1px solid #f2f2f2;
+}

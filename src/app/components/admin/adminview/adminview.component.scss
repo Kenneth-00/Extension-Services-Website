@@ -1,0 +1,63 @@
+.card {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    justify-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tablecontainer {
+    text-align:center; 
+    width: 100%;
+    border-collapse: collapse;
+
+    color: black;
+    padding: 4px;
+
+}
+
+.tablecontainer td, .tablecontainer th, .requestcontainer td, .requestcontainer th {
+    border: 1px solid #ddd;
+    padding: 6px;
+}
+
+.tablecontainer tr:nth-child(even), .requestcontainer tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+.tablecontainer tr:hover, .requestcontainer tr:hover {
+    background-color: #ddd;
+}
+
+.tablecontainer th, .requestcontainer th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #3f51b5;
+
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    padding-top: 10px;
+}
+
+.left {
+    float: left;
+}
+
+.text {
+    margin-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.right {
+    p{
+        float: right;
+    }
+    
+}
